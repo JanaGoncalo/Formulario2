@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadados -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Título da página (aparece na aba) -->
+    <title>Cadastro</title>
+  </head>
+
+  <table width="50%" left="100%" border="2px">
+    <tr>
+      <td>
+        <body>
+          <!-- Início do formulário -->
+          <form>
+            <center><img src="./img/form.png"></center>
+            <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+            <div>
+              <h1 id="titulo">Cadastro de dados</h1>
+              <br />
+            </div>
+
+              <!-- Campo do nome completo com legenda "nome" e css de classe "campo" -->
+              <div class="campo">
+                <label for="nome"><strong>Nome completo</strong></label>
+                <input type="text" name="nome" id="nome" required />
+              </div>
+
+              <!-- Campo de data de nascimento com-->
+              <div class="campo">
+                <label for="datadenascimento"
+                  ><strong>Data de Nascimento</strong></label
+                >
+                <input id="date" type="date" />
+              </div>
+
+              <!-- Campo de cor ou raça com 6 opções para escolha (select option) e css de classe "campo" -->
+              <div class="campo">
+                <label for="corouraça"><strong>Cor ou raça:</strong></label>
+                <select id="corouraça" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Branca</option>
+                  <option>Preta</option>
+                  <option>Parda</option>
+                  <option>Indígena</option>
+                  <option>Amarela</option>
+                  <option>Não desejo declarar</option>
+                </select>
+              </div>
+
+
+            <!-- Campo de sexo com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+              <label><strong>Escolha seu sexo:</strong></label>
+              <label>
+                <input
+                  type="radio"
+                  name="sexo"
+                  value="feminino"
+                  checked
+                />Feminino</label
+              >
+              <label>
+                <input type="radio" name="sexo" value="masculino" />Masculino
+              </label>
+              <label>
+                <input type="radio" name="sexo" value="outros" />Outros
+              </label>
+            </div>
+
+            <fieldset class="grupo">
+            <!-- Campo de filhos com legenda "filhos" e css de classe "campo" -->
+            <div class="campo">
+              <label for="filhos"><strong>Possui filhos?</strong></label>
+              <input type="radio" name="sexo" value="masculino" />Não
+              </label> 
+              <br>
+              <input type="radio" name="sexo" value="masculino" />Sim, digite a quantidade:
+              </label>
+              <input type="number" name="filhos" id="filhos" />
+            </div>
+            
+           <!-- Campo de estado civil com 5 opções para escolha (select option) e css de classe "campo" -->
+           <div class="campo">
+            <label for="estadocivil"><strong>Estado civil:</strong></label>
+            <select id="estadocivil" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Solteiro(a)</option>
+              <option>Casado(a)</option>
+              <option>Separado(a)</option>
+              <option>Divorciado(a)</option>
+              <option>Viúvo(a)</option>
+              <option>Outros</option>
+            </select>
+          </div>
+        </fieldset>
+          </fieldset>
+          <br>
+
+            <fieldset class="grupo">
+              <!-- Campo de telefone com legenda "telefone" e css de classe "campo" -->
+              <div class="campo">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="tel" name="telefone" id="telefone" required />
+              </div>
+
+              <!-- Campo de celular com legenda "celular" e css de classe "campo" -->
+              <div class="campo">
+                <label for="celular"><strong>Celular com DDD</strong></label>
+                <input type="tel" name="celular" id="celular" required />
+              </div>
+            </fieldset>
+            <br>
+
+            <!-- Campo de email com-->
+            <div class="campo">
+              <label for="email"><strong>Email</strong></label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <fieldset class="grupo">
+              <!-- Campo de endereço com legenda "endereço" e css de classe "campo" -->
+              <div class="campo">
+                <label for="endereco"><strong>Endereço</strong></label>
+                <input
+                  type="text"
+                  id="endereco"
+                  name="endereco"
+                  required
+                />
+              </div>
+
+              <!-- Campo de numero com legenda "numero" e css de classe "campo" -->
+              <div class="campo">
+                <label for="numero"><strong>Número</strong></label>
+                <input
+                  type="number"
+                  id="numero"
+                  name="numero"
+                  required
+                />
+              </div>
+
+              <!-- Campo de bairro com legenda "bairro" e css de classe "campo" -->
+              <div class="campo">
+                <label for="bairro"><strong>Bairro</strong></label>
+                <input type="text" id="bairro" name="bairro" required />
+              </div>
+
+              <!-- Campo de cidade com legenda "cidade" e css de classe "campo" -->
+              <div class="campo">
+                <label for="cidade"><strong>Cidade</strong></label>
+                <input
+                  type="text"
+                  id="cidade"
+                  name="cidade"
+                  required
+                />
+              </div>
+
+              <!-- Campo de estado com legenda "estado" e css de classe "campo" -->
+              <div class="campo">
+                <label for="estado"><strong>Estado</strong></label>
+                <select name="estado" lang="pt">
+                  <option value="">Selecione o Estado</option>
+                  <option value="ac">Acre</option>
+                  <option value="al">Alagoas</option>
+                  <option value="am">Amazonas</option>
+                  <option value="ap">Amapá</option>
+                  <option value="ba">Bahia</option>
+                  <option value="ce">Ceará</option>
+                  <option value="df">Distrito Federal</option>
+                  <option value="es">Espírito Santo</option>
+                  <option value="go">Goiás</option>
+                  <option value="ma">Maranhão</option>
+                  <option value="mt">Mato Grosso</option>
+                  <option value="ms">Mato Grosso do Sul</option>
+                  <option value="mg">Minas Gerais</option>
+                  <option value="pa">Pará</option>
+                  <option value="pb">Paraíba</option>
+                  <option value="pr">Paraná</option>
+                  <option value="pe">Pernambuco</option>
+                  <option value="pi">Piauí</option>
+                  <option value="rj">Rio de Janeiro</option>
+                  <option value="rn">Rio Grande do Norte</option>
+                  <option value="ro">Rondônia</option>
+                  <option value="rs">Rio Grande do Sul</option>
+                  <option value="rr">Roraima</option>
+                  <option value="sc">Santa Catarina</option>
+                  <option value="se">Sergipe</option>
+                  <option value="sp">São Paulo</option>
+                  <option value="to">Tocantins</option>
+                </select>
+              </div>
+
+              <!-- Campo de cep com legenda "cep" e css de classe "campo" -->
+              <div class="campo">
+                <label for="cep"><strong>CEP</strong></label>
+                <input
+                  type="number"
+                  id="cep"
+                  name="cep"
+                  required
+                />
+              </div>
+            </fieldset>
+            <br>
+
+            <!-- Campo de foto com legenda "foto" e css de classe "campo" -->
+            <div class="campo">
+              <label for="foto"><strong>Foto</strong></label>
+              <input type="file" name="arquivos" />
+            </div>
+            <br />
+
+             <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+             <div class="campo">
+              <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+              <label>
+                  <input type="radio" name="devweb" value="frontend" checked>Front-end
+              </label>
+              <label>
+                  <input type="radio" name="devweb" value="backend">Back-end
+              </label>
+              <label>
+                  <input type="radio" name="devweb" value="fullstack">Fullstack
+              </label>
+          </div>
+          
+            <fieldset class="grupo">
+              <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+              <div id="check">
+                <label
+                  ><strong>Selecione as tecnologias que utiliza:</strong></label
+                ><br /><br />
+                <input
+                  type="checkbox"
+                  id="tecnologia1"
+                  name="tecnologia1"
+                  value="HTML"
+                />
+                <label for="tecnologia1"> HTML</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia2"
+                  name="tecnologia2"
+                  value="CSS"
+                />
+                <label for="tecnologia2"> CSS</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia3"
+                  name="tecnologia3"
+                  value="JavaScript"
+                />
+                <label for="tecnologia3"> JavaScript</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia4"
+                  name="tecnologia4"
+                  value="PHP"
+                />
+                <label for="tecnologia4"> PHP</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia5"
+                  name="tecnologia5"
+                  value="C#"
+                />
+                <label for="tecnologia5"> C#</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia6"
+                  name="tecnologia6"
+                  value="Python"
+                />
+                <label for="tecnologia6"> Python</label>
+                <input
+                  type="checkbox"
+                  id="tecnologia7"
+                  name="tecnologia7"
+                  value="Java"
+                />
+                <label for="tecnologia7"> Java</label>
+                <br>
+                <input
+                  type="checkbox"
+                  id="outros"
+                  name="outros"
+                  value="outros"
+                />
+                <label for="outros"> Outras, descreva:</label> 
+                <textarea
+                rows="6"
+                style="width: 30em"
+                id="outros"
+                name="outros"
+              ></textarea>
+              </div>
+            </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+              <br />
+              <label for="experiencia"
+                ><strong>Conte um pouco mais sobre você: </strong></label
+              >
+              <textarea
+                rows="6"
+                style="width: 30em"
+                id="experiencia"
+                name="experiencia" required
+              ></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+          </form>
+        </body>
+      </td>
+    </tr>
+  </table>
+</html>
+
